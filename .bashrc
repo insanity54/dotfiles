@@ -225,3 +225,6 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+# override ps1 junk
+PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
