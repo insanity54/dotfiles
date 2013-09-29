@@ -76,5 +76,17 @@
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
-;; CCC                                                                          
+;; CCC                                                                         
+
+; Make backspace act like the backspace I'm used to 
 (normal-erase-is-backspace-mode 0)
+
+; Turn on syntax highlighting
+;(add-hook 'c-mode-hook 'turn-on-font-lock)
+
+; Syntax highlighting for Arduino .ino files
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c-mode))
+
+; Enable system copy in emacs (C-c, C-v)
+(setq x-select-enable-clipboard t)
+
