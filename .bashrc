@@ -228,3 +228,11 @@ source ~/.bashrc_custom
 
 # override ps1 junk
 PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+
+# emacs alias
+alias em='emacs -nw'
+
+# ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
