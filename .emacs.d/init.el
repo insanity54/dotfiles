@@ -90,3 +90,6 @@
 ; Enable system copy in emacs (C-c, C-v)
 (setq x-select-enable-clipboard t)
 
+; Only use spaces for indentation, and set standard indent to 4 spaces
+(setq-default indent-tabs-mode nil)
+(setq standard-indent 2)
